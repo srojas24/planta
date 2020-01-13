@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 4px;
+    text-align: left;
+    height: 58px;
+}
+
+.columna{
+    float: left;
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fila:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer{
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    line-height: 58px;
+}
