@@ -7,11 +7,13 @@ header{
     padding: 4px;
     text-align: left;
     height: 58px;
+    background-color: #027373;
+    color: white;
 }
 
 .columna{
     float: left;
-    padding: 10px;
+    padding: 4px;
     height: 300px;
     width: 100%;
     box-sizing: border-box;
@@ -26,8 +28,23 @@ header{
 .footer{
     padding: 10px;
     text-align: center;
+    background-color: #038C4C;
+    color: white;
 }
 
 h1{
     line-height: 58px;
+}
+
+h2{
+    color: #038C73;
+}
+
+.mensaje{
+    text-align: center;
+    margin-top: 12px;
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
 }
