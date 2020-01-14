@@ -11,8 +11,8 @@ include("head.php");
     ?>
     <section class="fila">
         <article class="columna">
-            <div class="mensaje">
-                <h2>Bienvenido al sistema</h2>
+            <div class="titulo">
+                <h2>Le ofrecemos las mejores plantas en venta</h2>
             </div>
         </article>
     </section>
