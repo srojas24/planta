@@ -14,9 +14,10 @@ header{
 .columna{
     float: left;
     padding: 4px;
-    height: 300px;
     width: 100%;
     box-sizing: border-box;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .fila:after{
@@ -70,4 +71,8 @@ li a{
     padding: 8px;
     text-decoration: none;
     color: white;
+}
+
+.contenido{
+    margin-top: 12px;
 }
