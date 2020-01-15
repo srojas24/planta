@@ -76,3 +76,10 @@ li a{
 .contenido{
     margin-top: 12px;
 }
+
+.planta{
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin-top: 12px;
+}
