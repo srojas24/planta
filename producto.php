@@ -23,26 +23,25 @@ include("head.php");
             <div class="titulo">
                 <h2>Nuestros Productos</h2>
             </div>
-            <div class="grupo">
-                <div class="unidad">
-                    <div class="polaroid">
-                        <img src="img/laurel_ornamental.jpg" alt="Laurel Ornamental" class="cuadro">
-                        <div class="container">
-                            <p>Laurel Ornamental</p>
-                            <p>Precio: S/. 55</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="unidad">
-                    <div class="polaroid">
-                        <img src="img/anturio.jpg" alt="Laurel Ornamental" class="cuadro">
-                        <div class="container">
-                            <p>Anturio</p>
-                            <p>Precio: S/. 35</p>
-                        </div>
+        </article>
+        <article class="conjunto">
+            <?php
+            while($fila = $resultado->fetch_assoc()){
+
+            ?>
+            <div class="unidad">
+                <div class="polaroid">
+                    <img src="<?php echo $fila["imagen"]; ?>" alt="Laurel Ornamental" class="cuadro">
+                    <div class="container">
+                        <p><?php echo $fila["nombre"]; ?></p>
+                        <p>Precio: S/.<?php echo $fila["precio"]; ?></p>
                     </div>
                 </div>
             </div>
+            <?php
+            }
+
+            ?>
         </article>
     </section>
     <?php

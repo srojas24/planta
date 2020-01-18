@@ -85,7 +85,7 @@ li a{
 }
 
 div.polaroid{
-    width: 84%;
+    width: 72%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     float: left;
@@ -103,14 +103,6 @@ div.container{
     width: 100%;
 }
 
-.grupo{
-    margin-top: 12px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .producto{
     float: left;
     width: 100%;
@@ -119,18 +111,16 @@ div.container{
     box-sizing: border-box;
 }
 
-.unidad1{
+.unidad{
     float: left;
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 12px;
 }
 
-.unidad2{
+.conjunto{
     float: left;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
