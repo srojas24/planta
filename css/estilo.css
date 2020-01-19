@@ -124,3 +124,39 @@ div.container{
     float: left;
     width: 100%;
 }
+
+.tabla{
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#producto{
+    border-collapse: collapse;
+    width: 70%;
+}
+
+#producto td, #producto th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#producto tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+#producto tr:hover{
+    background-color: #ddd;
+}
+
+#producto th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #027373;
+    text-align: left;
+    color: white;
+}

@@ -1,3 +1,11 @@
+<?php
+require("metodo_producto.php");
+
+$producto = new MetodoProducto();
+$resultado = $producto->listarProducto();
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <?php
@@ -9,9 +17,33 @@ include("head.php");
     include("header.php");
 
     ?>
-    <section>
+    <section class="fila">
         <div class="titulo">
             <h2>Listado de Productos</h2>
+        </div>
+        <div class="tabla">
+            <table id="producto">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <?php
+                while($fila = $resultado->fetch_assoc()){
+
+                ?>
+                <tr>
+                    <td><?php echo $fila["id"]; ?></td>
+                    <td><?php echo $fila["nombre"]; ?></td>
+                    <td><?php echo $fila["precio"]; ?></td>
+                </tr>
+                <?php
+                }
+
+                ?>
+            </table>
         </div>
     </section>
     <?php
