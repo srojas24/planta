@@ -20,6 +20,23 @@ class MetodoProducto{
             $this->conexion = Conexion::cerrarConexion();
         }
     }
+
+    public function insertarProducto($nombre, $precio, $imagen){
+        $msg = "";
+        $sql = "INSERT INTO producto(nombre, precio, imagen) VALUES('$nombre', $precio, '$imagen')";
+
+        try{
+            $resultado = $this->conexion->query($sql);
+            $msg = "Registro insertado";
+        }catch(Exception $e){
+            echo "Error: " + $e->getMessage();
+            $msg = "Registro no insertado";
+        }finally{
+            $this->conexion = Conexion::cerrarConexion();
+        }
+
+        return $msg;
+    }
 }
 
 ?>
