@@ -28,6 +28,7 @@ include("head.php");
                         <th>Código</th>
                         <th>Nombre</th>
                         <th>Precio</th>
+                        <th>Imagen</th>
                     </tr>
                 </thead>
                 <?php
@@ -38,6 +39,7 @@ include("head.php");
                     <td><?php echo $fila["id"]; ?></td>
                     <td><?php echo $fila["nombre"]; ?></td>
                     <td><?php echo $fila["precio"]; ?></td>
+                    <td><img src="<?php echo $fila["imagen"]; ?>" class="imagen-tabla"></td>
                 </tr>
                 <?php
                 }
