@@ -9,7 +9,7 @@ include("head.php");
     include("header.php");
 
     ?>
-    <section class="fila">
+    <section class="fila almacenar">
         <article>
             <div class="titulo">
                 <h2>Registro de Producto</h2>

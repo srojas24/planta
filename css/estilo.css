@@ -196,3 +196,15 @@ input[type=submit]:hover{
     box-sizing: border-box;
     display: block;
 }
+
+.comienzo{
+    margin-bottom: 98px;
+}
+
+.grupo{
+    margin-bottom: 378px;
+}
+
+.almacenar{
+    margin-bottom: 538px;
+}

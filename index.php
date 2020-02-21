@@ -9,7 +9,7 @@ include("head.php");
     include("header.php");
 
     ?>
-    <section class="fila">
+    <section class="fila comienzo">
         <article class="columna">
             <div class="titulo">
                 <h2>Le ofrecemos las mejores plantas en venta</h2>

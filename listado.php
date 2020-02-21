@@ -17,7 +17,7 @@ include("head.php");
     include("header.php");
 
     ?>
-    <section class="fila">
+    <section class="fila grupo">
         <div class="titulo">
             <h2>Listado de Productos</h2>
         </div>

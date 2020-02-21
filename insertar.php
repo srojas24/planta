@@ -10,7 +10,7 @@ $destino = "img/" . $imagen;
 copy($ruta, $destino);
 
 $producto =  new MetodoProducto();
-$resultado = $producto->insertarProducto($nombre, $precio, $imagen);
+$resultado = $producto->insertarProducto($nombre, $precio, $destino);
 
 if($resultado == "Registro insertado"){
     header('Location: listado.php');
